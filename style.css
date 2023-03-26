@@ -1,5 +1,3 @@
-/* Estilo global */
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +26,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    list-style: none;
 }
 
 nav ul li {
@@ -100,27 +99,4 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .header-content {
-        margin-top: 20px;
-    }
-
-    .header-content h1 {
-        font-size: 3rem;
-    }
-
-    .button {
-        margin-top: 20px;
-    }
 }
