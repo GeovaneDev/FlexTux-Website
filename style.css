@@ -6,10 +6,11 @@
     image-rendering: optimizeSpeed;
     shape-rendering: optimizeSpeed;
     transition-duration: 1s;
+    font-family: sans-serif, 'Open Sans', Arial !important;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, 'Open Sans', Arial;
 }
 
 a {
@@ -18,52 +19,96 @@ a {
 }
 
 header {
-    background-color: #1e1e1e;
+    background: linear-gradient(to bottom right, #220021, #3b2736);
     color: #fff;
     padding: 20px;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    background: linear-gradient(to right, #444444, #9b9b9b);
     display: flex;
-    list-style: none;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-nav ul li {
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
     margin: 0 10px;
 }
 
-nav ul li a {
-    font-weight: bold;
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
-    max-width: 800px;
-    margin: 0 auto;
+    background: linear-gradient(to right, #161515, #464646);
+    color: #fff;
+    padding: 50px;
     text-align: center;
-    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .header-content h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
+    font-family: sans-serif, 'Open Sans', Arial;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.header-content p {
+    font-family: sans-serif, 'Open Sans', Arial;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .button {
-    background-color: #7289da;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-weight: bold;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-family: sans-serif, 'Open Sans', Arial;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    margin: 0 10px;
 }
 
 .button:hover {
-    background-color: #677bc4;
+    background-color: #333;
+    color: #fff;
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.3s ease;
-    transition-duration: 0,5s;
+    transition-duration: 0, 5s;
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
@@ -71,20 +116,31 @@ nav ul li a {
     transform: scale(0.9);
 }
 
-section {
-    padding: 50px 20px;
+.background {
+    background: linear-gradient(to right, #f7f7f7, #757575);
+}
+
+.fonte {
+    font-family: sans-serif, 'Open Sans', Arial !important;
+  }  
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
     text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
+.section-description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 footer {
@@ -92,11 +148,11 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 50px;
+    font-family: sans-serif, 'Open Sans', Arial !important;
 }
 
 .footer-content {
-    max-width: 800px;
+    max-width: 1px;
     margin: 0 auto;
     text-align: center;
 }
