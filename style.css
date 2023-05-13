@@ -143,16 +143,34 @@ button:hover {
     max-width: 800px;
 }
 
-footer {
+.footer {
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-family: sans-serif, 'Open Sans', Arial !important;
-}
-
-.footer-content {
-    max-width: 1px;
-    margin: 0 auto;
-    text-align: center;
-}
+    font-family: sans-serif, 'Open Sans', Arial, Helvetica, sans-serif;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer a.btn {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .footer a.btn:hover {
+    background-color: #fff;
+    color: #1e1e1e;
+  }
+  
+  .footer p {
+    margin: 0;
+    padding: 10px 0;
+  }  
