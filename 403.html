@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .animated-text {
+      font-size: 36px;
+      color: #888;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid #888;
+      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+      margin-bottom: 40px;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #888;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Erro 403</h1>
+    <p>Oops! Você não tem permissão para acessar esta página.</p>
+    <p class="animated-text">Acesso negado...</p>
+    <p><a href="/">Voltar para a página inicial</a></p>
+  </div>
+</body>
+</html>
