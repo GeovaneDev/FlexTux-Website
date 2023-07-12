@@ -31,7 +31,7 @@ Para instalar o site, siga os seguintes passos:
 
 1. Clone este repositório:
 ```
-git clone https://github.com/GeovaneDev/Nyssa-bot-Website
+git clone https://github.com/GeovaneDev/NyssaBot-Website
 ```
 
 2. Abra o projeto em seu editor de texto.

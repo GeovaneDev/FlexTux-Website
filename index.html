@@ -2,180 +2,297 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    <meta http-equiv="X-Frame-Options" content="deny">
-    <meta http-equiv="Cache-Control" content="max-age=604800">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="no-referrer">
-    <meta name="google-site-verification" content="k2edGGdTzm6SqkYprpS1pVFps_H7ErgWdbmDom4H1iQ" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Nyssa bot - Discord Bot</title>
-    <meta name="description"
-        content="Adicione a Nyssa bot ao seu servidor do Discord e com comandos de utilidade, moderação, animes gifs e diversão. Bot 100% gratuito e fácil de usar. Conheça a Nissa Discord Bot">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6579884380270492"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyssa bot - Discord Bot</title>
+  <meta name="description" content="Adicione a Nyssa bot ao seu servidor do Discord e com comandos de utilidade, moderação, animes gifs e diversão. Bot 100% gratuito e fácil de usar. Conheça a Nyssa Discord Bot">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <style>
+    /* Custom styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom right, #220021, #3b2736);
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav {
+      background: linear-gradient(to right, #444444, #9b9b9b);
+      display: flex;
+      justify-content: center;
+      border-radius: 15px;
+      padding: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    .nav-button {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      background: linear-gradient(to right, #161515, #464646);
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .header-content p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .button {
+      background-color: #fff;
+      border-radius: 25px;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 30px;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      margin: 0 10px;
+    }
+
+    .button:hover {
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    }
+
+    .background {
+      background: linear-gradient(to right, #f7f7f7, #757575);
+    }
+
+    .section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .section-description {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .footer {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#"><button class="nav-button">Início</button></a></li>
-                <li><a href="#about"><button class="nav-button">Sobre</button></a></li>
-                <li><a href="#faq"><button class="nav-button">FAQ</button></a></li>
-		<li><a href="tos.html"><button class="nav-button">TOS</button></a></li>
-                <li><a
-                        href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands"><button
-                            class="nav-button">Adicionar bot</button></a></li>
-                <li><a href="https://github.com/GeovaneDev/NyssaBot"><button class="nav-button">Código
-                            fonte</button></a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1 class="mt-3">Nyssa bot</h1>
-            <p>Conheça a Nyssa bot, a bot que oferece comandos úteis, de moderação e de diversão em um só lugar! Torne
-                seu servidor mais eficiente e divertido com fácilidade!
-            </p>
-            <div class="button-container">
-                <a href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands"
-                    class="btn btn-primary button">Adicione agora</a>
-                <a href="https://github.com/GeovaneDev/NyssaBot" class="button btn btn-primary">Código fonte</a>
-            </div>
-        </div>
-        <br>
-    </header>
-    <main class="background">
-        </section>
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">Sobre</h2>
-                <p class="section-description">A Nyssa bot foi criada por Geovane, um jovem desenvolvedor que é
-                    apaixonado por tecnologia e programação.
-                    Ele criou a bot com o objetivo de oferecer aos usuários do Discord uma experiência mais agradável e
-                    divertida,
-                    com recursos úteis e fáceis de usar.</p>
-            </div>
-        </section>
-        </section>
-        <div class="d-flex justify-content-center">
-            <a href="https://top.gg/bot/944555548148375592" class="d-block mx-auto w-50">
-                <img class="mx-auto d-block w-75" src="https://top.gg/api/widget/944555548148375592.svg"
-                    alt="Nyssa Bot Widget">
-            </a>
-        </div>
-        <section id="faq">
-            <h2 class="section-title">FAQ</h2>
-            <div class="container">
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                O que é uma bot do Discord?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Uma bot do Discord é um programa que pode ser adicionado a um servidor do Discord para
-                                adicionar funcionalidades específicas, como comandos de economia, utilidade e diversão.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Como adiciono a bot ao meu servidor do Discord?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Para adicionar a bot ao seu servidor do Discord, é necessário ter permissões de
-                                administrador. Em seguida, você pode usar o botão "Adicionar a Bot" no ínicio do site.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                A bot é segura de usar?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sim, a bot é segura de usar nosso bot é open source, garantindo transparência e segurança
-                                adicionais.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Como posso usar os comandos da bot?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Para usar os comandos da bot, digite o prefixo do bot seguido do nome do comando
-                                desejado no canal de texto do Discord. O prefixo padrão da Nyssa bot é "/".
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                A bot funciona 24 horas por dia, 7 dias por semana?
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sim, a bot fica online 24 horas por dia, 7 dias por semana para garantir que seus
-                                comandos estejam sempre disponíveis.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Como posso relatar um problema com a bot?
-                            </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Se você encontrar algum problema com a bot, pode entrar em contato com o desenvolvedor
-                                pelo Discord ou pelo GitHub para relatar o problema e obter ajuda.
-                            </div>
-                        </div>
-                    </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#"><button class="nav-button">Início</button></a></li>
+        <li><a href="#about"><button class="nav-button">Sobre</button></a></li>
+        <li><a href="#faq"><button class="nav-button">FAQ</button></a></li>
+        <li><a href="tos"><button class="nav-button">TOS</button></a></li>
+        <li><a href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands"><button class="nav-button">Adicionar bot</button></a></li>
+        <li><a href="https://github.com/GeovaneDev/NyssaBot"><button class="nav-button">Código fonte</button></a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1 class="animate__animated animate__fadeInDown">Nyssa bot</h1>
+      <p class="animate__animated animate__fadeInUp">Conheça a Nyssa bot, a bot que oferece comandos úteis, de moderação e de diversão em um só lugar! Torne seu servidor mais eficiente e divertido com facilidade!</p>
+      <div class="button-container animate__animated animate__fadeInUp">
+        <a href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands" class="btn btn-primary button">Adicione agora</a>
+        <a href="https://github.com/GeovaneDev/NyssaBot" class="button btn btn-primary">Código fonte</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="background">
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title animate__animated animate__fadeInDown">Sobre</h2>
+        <p class="section-description animate__animated animate__fadeInUp">A Nyssa bot foi criada por Geovane, um jovem desenvolvedor que é apaixonado por tecnologia e programação. Ele criou a bot com o objetivo de oferecer aos usuários do Discord uma experiência mais agradável e divertida, com recursos úteis e fáceis de usar.</p>
+      </div>
+    </section>
+
+    <div class="d-flex justify-content-center animate__animated animate__fadeInUp">
+      <a href="https://top.gg/bot/944555548148375592" class="d-block mx-auto w-50">
+        <img class="mx-auto d-block w-75" src="https://top.gg/api/widget/944555548148375592.svg" alt="Nyssa Bot Widget">
+      </a>
+    </div>
+
+    <section id="faq" class="section">
+        <h2 class="section-title">FAQ</h2>
+        <div class="container">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  O que é uma bot do Discord?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Uma bot do Discord é um programa que pode ser adicionado a um servidor do Discord para adicionar funcionalidades específicas, como comandos de economia, utilidade e diversão.
                 </div>
+              </div>
             </div>
-        </section>
-        <br><br>
-    </main>
-    <footer class="footer">
-        <div class="container text-center mt-4">
-          <p class="text-white">&copy; 2023 <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer">GeovaneDev</a>. Todos os direitos reservados.</p>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Como adiciono a bot ao meu servidor do Discord?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Para adicionar a bot ao seu servidor do Discord, é necessário ter permissões de administrador. Em seguida, você pode usar o botão "Adicionar bot" no início do site, ou <a href="/#">Clique Aqui para ir ao início do site.</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  A bot é segura de usar?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sim, a bot é segura de usar. Nosso bot é open source, garantindo transparência e segurança.
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Como posso usar os comandos da bot?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Para usar os comandos da bot, digite o prefixo do bot seguido do nome do comando desejado no canal de texto do Discord. O prefixo padrão da Nyssa bot é "/".
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  A bot funciona 24 horas por dia, 7 dias por semana?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sim, a bot fica online 24 horas por dia, 7 dias por semana para garantir que seus comandos estejam sempre disponíveis.
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Como posso relatar um problema com a bot?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Se você encontrar algum problema com a bot, crie um <a href="https://github.com/GeovaneDev/Nyssa-bot-Website/issues">Issues</a> no GitHub.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>    
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2023 <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer">GeovaneDev</a>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script>
+    // Script para controlar o acordeão do FAQ
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+      const button = item.querySelector('.accordion-button');
+
+      button.addEventListener('click', () => {
+        item.classList.toggle('active');
+
+        const collapse = item.querySelector('.accordion-collapse');
+        const isOpen = collapse.classList.contains('show');
+
+        if (isOpen) {
+          collapse.classList.remove('show');
+        } else {
+          collapse.classList.add('show');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
