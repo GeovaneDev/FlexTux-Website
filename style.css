@@ -151,26 +151,62 @@ button:hover {
     font-family: sans-serif, 'Open Sans', Arial, Helvetica, sans-serif;
   }
   
-  .footer h5 {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    width: 100%;
+    text-align: center;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer .container.text-center {
+    margin-top: 20px;
+}
+
+/* Estilos para as categorias */
+.category {
+    margin-bottom: 20px;
+    font-family: sans-serif, 'Open Sans', Arial !important;
+  }
+  
+  .category-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  /* Estilos para a lista de comandos */
+  .command-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .command {
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .command-name {
+    font-size: 16px;
     font-weight: bold;
   }
   
-  .footer ul li {
-    display: inline-block;
-    margin-right: 10px;
+  .command-description {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
   
-  .footer a.btn {
-    color: #fff;
-    border-color: #fff;
-  }
-  
-  .footer a.btn:hover {
-    background-color: #fff;
-    color: #1e1e1e;
-  }
-  
-  .footer p {
-    margin: 0;
-    padding: 10px 0;
-  }  
