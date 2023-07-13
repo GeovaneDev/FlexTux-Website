@@ -1,212 +1,342 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-rendering: optimizeSpeed;
-    image-rendering: optimizeSpeed;
-    shape-rendering: optimizeSpeed;
-    transition-duration: 1s;
-    font-family: sans-serif, 'Open Sans', Arial !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
+  transition-duration: 1s;
 }
 
 body {
-    font-family: sans-serif, 'Open Sans', Arial;
+  font-family: sans-serif, 'Open Sans', Arial;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
 }
 
 header {
-    background: linear-gradient(to bottom right, #220021, #3b2736);
-    color: #fff;
-    padding: 20px;
+  background: linear-gradient(to bottom right, #220021, #3b2736);
+  color: #fff;
+  padding: 20px;
 }
 
-nav {
-    background: linear-gradient(to right, #444444, #9b9b9b);
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;
-    padding: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.navbar {
+  background: linear-gradient(to right, #444444, #9b9b9b);
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
-    background: linear-gradient(to right, #161515, #464646);
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+  background: linear-gradient(to right, #161515, #464646);
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .header-content h1 {
-    font-family: sans-serif, 'Open Sans', Arial;
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 30px;
 }
 
 .header-content p {
-    font-family: sans-serif, 'Open Sans', Arial;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .button {
-    background-color: #fff;
-    border-radius: 25px;
-    border: none;
-    color: #333;
-    cursor: pointer;
-    font-family: sans-serif, 'Open Sans', Arial;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-    margin: 0 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  margin: 0 10px;
 }
 
 .button:hover {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-    transition-duration: 0, 5s;
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  transition-duration: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .button:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .background {
-    background: linear-gradient(to right, #f7f7f7, #757575);
+  color: white;
+  background: linear-gradient(to right, #161515, #464646);
 }
 
 .fonte {
-    font-family: sans-serif, 'Open Sans', Arial !important;
-  }  
+  font-family: sans-serif, 'Open Sans', Arial !important;
+}
 
 .section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .section-description {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.8;
-    margin: 0 auto;
-    max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.faq {
+  background: rgb(54, 54, 54);
+  color: white;
 }
 
 .footer {
-    background-color: #1e1e1e;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-family: sans-serif, 'Open Sans', Arial, Helvetica, sans-serif;
-  }
-  
-  footer ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+  margin: 0;
+  margin-left: 0;
+  text-align: center;
+  font-family: sans-serif, 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer ul li a {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 footer ul li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-footer .container.text-center {
-    margin-top: 20px;
-}
-
-/* Estilos para as categorias */
 .category {
-    margin-bottom: 20px;
-    font-family: sans-serif, 'Open Sans', Arial !important;
+  margin-bottom: 20px;
+  font-family: sans-serif, 'Open Sans', Arial !important;
+}
+
+.category-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.commands {
+  background: linear-gradient(to right, #161515, #464646);
+  color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.commands h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.category-list {
+  margin-bottom: 30px;
+}
+
+.category-list .list-group-item {
+  cursor: pointer;
+  background: rgb(54, 54, 54);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.category-list .list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.category-list .list-group-item.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.command-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.command {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.command:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.command-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.command-description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 30px;
   }
-  
-  .category-title {
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  .header-content h1 {
+    font-size: 36px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+  }
+
+  .faq {
+    padding: 30px;
+  }
+
+  .faq h2 {
+    font-size: 30px;
+  }
+
+  .faq .question-text {
+    font-size: 16px;
+  }
+
+  .faq .answer {
+    font-size: 14px;
+  }
+
+  .commands {
+    padding: 30px;
+    background-color: rgb(25, 0, 255);
     color: white;
   }
-  
-  /* Estilos para a lista de comandos */
-  .command-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  .commands h2 {
+    font-size: 30px;
   }
-  
-  .command {
-    align-items: flex-start;
-    margin-bottom: 10px;
+
+  .category-list .list-group-item {
+    font-size: 14px;
+    background-color: black;
+    color: white;
   }
-  
+
+  .category-title {
+    font-size: 20px;
+  }
+
   .command-name {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
   }
-  
+
   .command-description {
     font-size: 14px;
-    margin-top: 5px;
-    margin-left: 10px;
   }
-  
+}

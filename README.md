@@ -17,6 +17,7 @@ O site da Nyssa Bot possui as seguintes funcionalidades:
 - Informações sobre o bot
 - O seu FAQ (Perguntas frequentes)
 - O link do Top.gg
+- Lista de comandos
 
 ## Requisitos
 

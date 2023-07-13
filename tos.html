@@ -3,8 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta http-equiv="X-Frame-Options" content="deny">
+  <meta http-equiv="Cache-Control" content="max-age=604800">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="no-referrer">
   <title>Termos de Uso</title>
+  <meta name="description"
+    content="Adicione a Nyssa bot ao seu servidor do Discord e com comandos de utilidade, moderação, animes gifs e diversão. Bot 100% gratuito e fácil de usar. Conheça a Nyssa Discord Bot">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="style.css">
   <style>
     * {
@@ -118,16 +130,31 @@
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="/"><button class="nav-button">Início</button></a></li>
-        <li><a href="/#about"><button class="nav-button">Sobre</button></a></li>
-        <li><a href="/#faq"><button class="nav-button">FAQ</button></a></li>
-        <li><a href="/#"><button class="nav-button">TOS</button></a></li>
-        <li><a href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands"><button class="nav-button">Adicionar bot</button></a></li>
-        <li><a href="https://github.com/GeovaneDev/NyssaBot"><button class="nav-button">Código fonte</button></a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="/#">NyssaBot</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index#about">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="comandos">Comandos</a></li>
+              <li class="nav-item"><a class="nav-link" href="index#faq">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="tos">TOS</a></li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link"
+                  href="https://discord.com/api/oauth2/authorize?client_id=944555548148375592&permissions=1514177690710&scope=bot%20applications.commands">Adicionar
+                  bot</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/GeovaneDev/NyssaBot">Código fonte</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
   </header>
 
   <section id="home" class="background">
@@ -181,10 +208,15 @@
   </section>
 
   <footer class="footer">
-    <div class="container text-center mt-4">
-      <p class="text-white">&copy; 2023 <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer">GeovaneDev</a>. Todos os direitos reservados.</p>
+    <div class="container text-center">
+      <p>&copy; 2023 <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer">GeovaneDev</a>.
+        Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
