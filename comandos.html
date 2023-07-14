@@ -7,407 +7,462 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
   <meta http-equiv="X-Frame-Options" content="deny">
-  <meta http-equiv="Cache-Control" content="max-age=604800">
   <meta http-equiv="X-XSS-Protection" content="1; mode=block">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="no-referrer">
   <meta name="google-site-verification" content="k2edGGdTzm6SqkYprpS1pVFps_H7ErgWdbmDom4H1iQ" />
-  <title>Nyssa bot - Comandos</title>
-  <meta name="description"
-    content="Lista de comandos da Nyssa Bot com comandos de utilidade, moderação, animes gifs e diversão.">
-  <link rel="stylesheet" href="style.css">
+  <title>NyssaBot - Comandos</title>
+  <meta name="description" content="Lista de todos os Comandos da NyssaBot">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
-    <header class="header">
+<body class="dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">NyssaBot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="comandos">Comandos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://top.gg/bot/944555548148375592">Top.gg</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="invite">Adicionar</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="status">Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/GeovaneDev/NyssaBot">Github</a>
+            </li>
+        </ul>
+    </div>
+</div>
+  </nav>
+  <main>
+    <section id="commands bg-dark" class="section header-content">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="/#">NyssaBot</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="index#about">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link" href="comandos">Comandos</a></li>
-              <li class="nav-item"><a class="nav-link" href="index#faq">FAQ</a></li>
-              <li class="nav-item"><a class="nav-link" href="tos">TOS</a></li>
-              <li class="nav-item"><a class="nav-link" href="status">Status</a></li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link"
-                  href="invite">Adicionar
-                  bot</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/GeovaneDev/NyssaBot">Código fonte</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section id="commands" class="section header-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="category-list">
-                <h2 class="section-title">Categorias</h2>
-                <ul class="list-group">
-                  <li class="list-group-item active" data-category="utilidades">Utilidades</li>
-                  <li class="list-group-item" data-category="diversao">Diversão</li>
-                  <li class="list-group-item" data-category="economia">Economia</li>
-                  <li class="list-group-item" data-category="animes-gifs">Animes Gifs</li>
-                  <li class="list-group-item" data-category="imagem">Imagem</li>
-                  <li class="list-group-item" data-category="administracao">Administração</li>
-                </ul>
-              </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="category-list"><br>
+              <h2 class="section-title">Categorias</h2><br>
+              <ul class="list-group">
+                <li class="list-group-item bg-secondary" data-category="utilidades">Utilidades</li>
+                <li class="list-group-item" data-category="diversao">Diversão</li>
+                <li class="list-group-item" data-category="economia">Economia</li>
+                <li class="list-group-item" data-category="animes-gifs">Animes Gifs</li>
+                <li class="list-group-item" data-category="imagem">Imagem</li>
+                <li class="list-group-item" data-category="administracao">Administração</li>
+              </ul>
             </div>
-            <div class="col-lg-8">
-              <div class="category-content">
-                <h2 class="section-title">Comandos do Nyssa bot</h2>
-                <div class="category" id="utilidades">
-                  <h3 class="category-title">Utilidades</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/ajuda</h4>
-                      <p class="command-description">Mostra todos os comandos.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/ascii</h4>
-                      <p class="command-description">Converte um texto em ASCII.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/escolher</h4>
-                      <p class="command-description">Escreva duas escolhas e eu vou escolher uma.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/lembrete</h4>
-                      <p class="command-description">Define um lembrete</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/livro</h4>
-                      <p class="command-description">Pesquise informações sobre um livro.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/ping</h4>
-                      <p class="command-description">Descubra o meu tempo de resposta.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/qr-code</h4>
-                      <p class="command-description">Transforma um link em QR code.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/server-info</h4>
-                      <p class="command-description">Veja as informações do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/nyssabot info</h4>
-                      <p class="command-description">Fornece informações sobre mim.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/sugestao</h4>
-                      <p class="command-description">Envie uma sugestão para me ajudar a evoluir!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/traduzir</h4>
-                      <p class="command-description">Traduz um texto para outro idioma.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/uptime</h4>
-                      <p class="command-description">Quanto tempo estou online.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/user-avatar</h4>
-                      <p class="command-description">Mostra o avatar de um usuário.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/user-info</h4>
-                      <p class="command-description">Veja informações de um usuário.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/wiki</h4>
-                      <p class="command-description">Pesquise algo na Wikipedia.</p>
-                    </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="category-content"><br>
+              <h2 class="section-title">Comandos do Nyssa bot</h2><br>
+              <div class="category" id="utilidades">
+                <h3 class="category-title">Utilidades</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/ajuda</h4>
+                    <p class="command-description">Mostra todos os comandos.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/ascii</h4>
+                    <p class="command-description">Converte um texto em ASCII.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/escolher</h4>
+                    <p class="command-description">Escreva duas escolhas e eu vou escolher uma.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/lembrete</h4>
+                    <p class="command-description">Define um lembrete</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/livro</h4>
+                    <p class="command-description">Pesquise informações sobre um livro.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/ping</h4>
+                    <p class="command-description">Descubra o meu tempo de resposta.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/qr-code</h4>
+                    <p class="command-description">Transforma um link em QR code.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/server-info</h4>
+                    <p class="command-description">Veja as informações do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/nyssabot info</h4>
+                    <p class="command-description">Fornece informações sobre mim.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/sugestao</h4>
+                    <p class="command-description">Envie uma sugestão para me ajudar a evoluir!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/traduzir</h4>
+                    <p class="command-description">Traduz um texto para outro idioma.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/uptime</h4>
+                    <p class="command-description">Quanto tempo estou online.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/user-avatar</h4>
+                    <p class="command-description">Mostra o avatar de um usuário.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/user-info</h4>
+                    <p class="command-description">Veja informações de um usuário.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/wiki</h4>
+                    <p class="command-description">Pesquise algo na Wikipedia.</p>
                   </div>
                 </div>
-                <div class="category" id="diversao">
-                  <h3 class="category-title">Diversão</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/8ball</h4>
-                      <p class="command-description">Pergunte algo para mim!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/anagrama</h4>
-                      <p class="command-description">Mostra quantos anagramas têm a palavra fornecida.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/animal</h4>
-                      <p class="command-description">Receba uma foto aleatória de um animal fofo para alegrar o dia!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/coinflip</h4>
-                      <p class="command-description">Jogue cara ou coroa para ver quem vence!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/coinflip2</h4>
-                      <p class="command-description">Jogue cara ou coroa comigo, eu amo um bom desafio!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/dado</h4>
-                      <p class="command-description">Role um dado virtual para ver qual número sai!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/f</h4>
-                      <p class="command-description">Digite F para um usuário!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/hack</h4>
-                      <p class="command-description">Comando para hackear alguém. (na brincadeira, claro!)</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/mcsrvstat</h4>
-                      <p class="command-description">Veja as informações de um servidor de Minecraft!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/parouimpar</h4>
-                      <p class="command-description">Jogue par ou ímpar comigo e teste sua sorte!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/pensamento</h4>
-                      <p class="command-description">Exibe um pensamento filosófico aleatório.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/roleta russa</h4>
-                      <p class="command-description">Aposte em um número e veja se você é sortudo(a)!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/rps usuario</h4>
-                      <p class="command-description">Jogue pedra, papel ou tesoura com alguém. (BETA)</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/rps bot</h4>
-                      <p class="command-description">Jogue pedra, papel ou tesoura comigo, eu adoro esse jogo! (BETA)</p>
-                    </div>
+              </div>
+              <div class="category" id="diversao">
+                <h3 class="category-title">Diversão</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/8ball</h4>
+                    <p class="command-description">Pergunte algo para mim!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/anagrama</h4>
+                    <p class="command-description">Mostra quantos anagramas têm a palavra fornecida.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/animal</h4>
+                    <p class="command-description">Receba uma foto aleatória de um animal fofo para alegrar o dia!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/coinflip</h4>
+                    <p class="command-description">Jogue cara ou coroa para ver quem vence!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/coinflip2</h4>
+                    <p class="command-description">Jogue cara ou coroa comigo, eu amo um bom desafio!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/dado</h4>
+                    <p class="command-description">Role um dado virtual para ver qual número sai!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/f</h4>
+                    <p class="command-description">Digite F para um usuário!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/hack</h4>
+                    <p class="command-description">Comando para hackear alguém. (na brincadeira, claro!)</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/mcsrvstat</h4>
+                    <p class="command-description">Veja as informações de um servidor de Minecraft!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/parouimpar</h4>
+                    <p class="command-description">Jogue par ou ímpar comigo e teste sua sorte!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/pensamento</h4>
+                    <p class="command-description">Exibe um pensamento filosófico aleatório.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/roleta russa</h4>
+                    <p class="command-description">Aposte em um número e veja se você é sortudo(a)!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/rps usuario</h4>
+                    <p class="command-description">Jogue pedra, papel ou tesoura com alguém. (BETA)</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/rps bot</h4>
+                    <p class="command-description">Jogue pedra, papel ou tesoura comigo, eu adoro esse jogo! (BETA)</p>
                   </div>
                 </div>
-                <div class="category" id="economia">
-                  <h3 class="category-title">Economia</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/apostar</h4>
-                      <p class="command-description">Aposte suas moedas.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/daily</h4>
-                      <p class="command-description">Receba uma recompensa diária.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/pagar</h4>
-                      <p class="command-description">Pagar moedas a outro usuário.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/rank</h4>
-                      <p class="command-description">Mostra o rank por quantidade de dinheiro. (BETA)</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/saldo</h4>
-                      <p class="command-description">Veja o saldo de alguém.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/trabalhar</h4>
-                      <p class="command-description">Trabalhe e ganhe algumas moedas.</p>
-                    </div>
+              </div>
+              <div class="category" id="economia">
+                <h3 class="category-title">Economia</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/apostar</h4>
+                    <p class="command-description">Aposte suas moedas.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/daily</h4>
+                    <p class="command-description">Receba uma recompensa diária.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/pagar</h4>
+                    <p class="command-description">Pagar moedas a outro usuário.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/rank</h4>
+                    <p class="command-description">Mostra o rank por quantidade de dinheiro. (BETA)</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/saldo</h4>
+                    <p class="command-description">Veja o saldo de alguém.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/trabalhar</h4>
+                    <p class="command-description">Trabalhe e ganhe algumas moedas.</p>
                   </div>
                 </div>
-                <div class="category" id="animes-gifs">
-                  <h3 class="category-title">Animes Gifs</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/abraço</h4>
-                      <p class="command-description">Abraça alguém para mostrar carinho!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/beijar</h4>
-                      <p class="command-description">Dê um beijinho em alguém!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/cafune</h4>
-                      <p class="command-description">Faça cafuné em alguém para demostrar carinho!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/comemorar</h4>
-                      <p class="command-description">Comemore algo com alguém!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/dança</h4>
-                      <p class="command-description">Dançe com alguém!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/palmas </h4>
-                      <p class="command-description">Mostre seu apoio a alguém e bata palminhas!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/piscar </h4>
-                      <p class="command-description">Pisque para alguém e mostre que você tá pensando nele(a)!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/tapa </h4>
-                      <p class="command-description">Dê um tapa em alguém (virtualmente, claro!) que mereça!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/toca aqui</h4>
-                      <p class="command-description">Mande um "toca aqui" para alguém e demonstre carinho!</p>
-                    </div>
+              </div>
+              <div class="category" id="animes-gifs">
+                <h3 class="category-title">Animes Gifs</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/abraço</h4>
+                    <p class="command-description">Abraça alguém para mostrar carinho!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/beijar</h4>
+                    <p class="command-description">Dê um beijinho em alguém!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/cafune</h4>
+                    <p class="command-description">Faça cafuné em alguém para demostrar carinho!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/comemorar</h4>
+                    <p class="command-description">Comemore algo com alguém!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/dança</h4>
+                    <p class="command-description">Dançe com alguém!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/palmas </h4>
+                    <p class="command-description">Mostre seu apoio a alguém e bata palminhas!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/piscar </h4>
+                    <p class="command-description">Pisque para alguém e mostre que você tá pensando nele(a)!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/tapa </h4>
+                    <p class="command-description">Dê um tapa em alguém (virtualmente, claro!) que mereça!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/toca aqui</h4>
+                    <p class="command-description">Mande um "toca aqui" para alguém e demonstre carinho!</p>
                   </div>
                 </div>
-                <div class="category" id="imagem">
-                  <h3 class="category-title">Imagem</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/imagem-ednaldo</h4>
-                      <p class="command-description">Escreva algo no pano do Ednaldo Pereira.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/imagem-passed</h4>
-                      <p class="command-description">Aplica o efeito 'passed' a uma imagem de perfil, estilo GTA</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/imagem-stonks</h4>
-                      <p class="command-description">Cria uma imagem do meme stonks!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/imagem-triggered</h4>
-                      <p class="command-description">Aplica o efeito 'triggered' a uma imagem de perfil.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/imagem-wasted</h4>
-                      <p class="command-description">Aplica o efeito 'Wasted' a uma imagem de perfil, estilo do GTA.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/imagem-xbox</h4>
-                      <p class="command-description">Desbloqueie uma conquista do Xbox.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/mememaker </h4>
-                      <p class="command-description">Crie um meme personalizado.</p>
-                    </div>
+              </div>
+              <div class="category" id="imagem">
+                <h3 class="category-title">Imagem</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/imagem-ednaldo</h4>
+                    <p class="command-description">Escreva algo no pano do Ednaldo Pereira.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/imagem-passed</h4>
+                    <p class="command-description">Aplica o efeito 'passed' a uma imagem de perfil, estilo GTA</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/imagem-stonks</h4>
+                    <p class="command-description">Cria uma imagem do meme stonks!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/imagem-triggered</h4>
+                    <p class="command-description">Aplica o efeito 'triggered' a uma imagem de perfil.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/imagem-wasted</h4>
+                    <p class="command-description">Aplica o efeito 'Wasted' a uma imagem de perfil, estilo do GTA.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/imagem-xbox</h4>
+                    <p class="command-description">Desbloqueie uma conquista do Xbox.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/mememaker </h4>
+                    <p class="command-description">Crie um meme personalizado.</p>
                   </div>
                 </div>
-                <div class="category" id="administracao">
-                  <h3 class="category-title">Administração</h3>
-                  <div class="command-list">
-                    <div class="command">
-                      <h4 class="command-name">/ban</h4>
-                      <p class="command-description">Banir um usuário do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/banimentos </h4>
-                      <p class="command-description">lista de banimentos do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/limpar</h4>
-                      <p class="command-description">Limpar uma quantidade específica de mensagens em um canal.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/kick</h4>
-                      <p class="command-description">Expulsar um usuário do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/lock </h4>
-                      <p class="command-description">Bloquear um canal.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/setnick </h4>
-                      <p class="command-description">Mudar o apelido de um membro.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/unmute</h4>
-                      <p class="command-description">Remover o silenciamento de um usuário no servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/ban</h4>
-                      <p class="command-description">Banir um usuário do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/banimentos</h4>
-                      <p class="command-description">Lista de banimentos do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/limpar</h4>
-                      <p class="command-description">Limpar uma quantidade específica de mensagens em um canal.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/kick</h4>
-                      <p class="command-description">Expulsar um usuário do servidor.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/lock</h4>
-                      <p class="command-description">Bloquear um canal.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/setnick</h4>
-                      <p class="command-description">Mudar o apelido de um membro.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/slowmode-set</h4>
-                      <p class="command-description">Configurar o modo lento.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/slowmode off</h4>
-                      <p class="command-description">Desativar o modo lento.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/sorteio</h4>
-                      <p class="command-description">Realizar um sorteio.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/timeout</h4>
-                      <p class="command-description">Castigue um membro!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/timeout-remove</h4>
-                      <p class="command-description">Remova o castigo de um membro!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/unlock</h4>
-                      <p class="command-description">Desbloquear um canal.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/cargo-botao</h4>
-                      <p class="command-description">Ganhe cargos clicando no botão.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/webhook-docs</h4>
-                      <p class="command-description">Documentação de como usar os comandos de webhook!</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/webhook-embed</h4>
-                      <p class="command-description">Envia uma embed através de um webhook.</p>
-                    </div>
-                    <div class="command">
-                      <h4 class="command-name">/webhook-simples</h4>
-                      <p class="command-description">Envia uma mensagem simples através de um webhook.</p>
-                    </div>
+              </div>
+              <div class="category" id="administracao">
+                <h3 class="category-title">Administração</h3>
+                <div class="command-list">
+                  <div class="command">
+                    <h4 class="command-name">/ban</h4>
+                    <p class="command-description">Banir um usuário do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/banimentos </h4>
+                    <p class="command-description">lista de banimentos do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/limpar</h4>
+                    <p class="command-description">Limpar uma quantidade específica de mensagens em um canal.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/kick</h4>
+                    <p class="command-description">Expulsar um usuário do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/lock </h4>
+                    <p class="command-description">Bloquear um canal.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/setnick </h4>
+                    <p class="command-description">Mudar o apelido de um membro.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/unmute</h4>
+                    <p class="command-description">Remover o silenciamento de um usuário no servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/ban</h4>
+                    <p class="command-description">Banir um usuário do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/banimentos</h4>
+                    <p class="command-description">Lista de banimentos do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/limpar</h4>
+                    <p class="command-description">Limpar uma quantidade específica de mensagens em um canal.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/kick</h4>
+                    <p class="command-description">Expulsar um usuário do servidor.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/lock</h4>
+                    <p class="command-description">Bloquear um canal.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/setnick</h4>
+                    <p class="command-description">Mudar o apelido de um membro.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/slowmode-set</h4>
+                    <p class="command-description">Configurar o modo lento.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/slowmode off</h4>
+                    <p class="command-description">Desativar o modo lento.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/sorteio</h4>
+                    <p class="command-description">Realizar um sorteio.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/timeout</h4>
+                    <p class="command-description">Castigue um membro!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/timeout-remove</h4>
+                    <p class="command-description">Remova o castigo de um membro!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/unlock</h4>
+                    <p class="command-description">Desbloquear um canal.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/cargo-botao</h4>
+                    <p class="command-description">Ganhe cargos clicando no botão.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/webhook-docs</h4>
+                    <p class="command-description">Documentação de como usar os comandos de webhook!</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/webhook-embed</h4>
+                    <p class="command-description">Envia uma embed através de um webhook.</p>
+                  </div>
+                  <div class="command">
+                    <h4 class="command-name">/webhook-simples</h4>
+                    <p class="command-description">Envia uma mensagem simples através de um webhook.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container text-center">
-        <p>&copy; 2023 <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer">GeovaneDev</a>.
-          Todos os direitos reservados.</p>
       </div>
-    </footer>
-
-    <script src="script.js"></script>
+    </section>
+  </main>
+  <footer class="bg-dark">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Links Úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="comandos">Comandos</a></li>
+            <li><a href="index#about">Sobre</a></li>
+            <li><a href="invite">Adicionar bot</a></li>
+            <li><a href="https://github.com/GeovaneDev/NyssaBot">Github</a></li>
+            <li><a href="status">Status</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Termos Legais</h5>
+          <ul class="list-unstyled">
+            <li><a href="tos">Termos de Uso</a></li>
+            <li><a href="pp">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3">
+      <small>&copy; 2023 <a href="https://github.com/GeovaneDev">GeovaneDev</a>. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+  <script>function showCategory(categoryId) {
+      const categories = document.querySelectorAll('.category');
+      categories.forEach(category => {
+        category.style.display = 'none';
+      });
+      const category = document.getElementById(categoryId);
+      if (category) {
+        category.style.display = 'block';
+      }
+    }
+    const categoryItems = document.querySelectorAll('.list-group-item');
+    categoryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        categoryItems.forEach(item => item.classList.remove('bg-secondary'));
+        item.classList.add('bg-secondary');
+        const categoryId = item.getAttribute('data-category');
+        showCategory(categoryId);
+      });
+    });
+    if (categoryItems.length > 0) {
+      const firstItem = categoryItems[0];
+      const categoryId = firstItem.getAttribute('data-category');
+      showCategory(categoryId);
+    }
+    addBackToTopButton();
+  </script>
 </body>
+
+</html>

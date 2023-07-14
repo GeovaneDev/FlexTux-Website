@@ -1,3 +1,12 @@
 User-agent: *
 
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /invite
+Disallow: /invite.html
+Disallow: /500
+Disallow: /500.html
+Disallow: /404
+Disallow: /404.html
+
 Sitemap: https://nyssabot.pages.dev/sitemap.xml

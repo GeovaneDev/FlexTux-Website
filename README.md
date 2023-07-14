@@ -18,6 +18,8 @@ O site da Nyssa Bot possui as seguintes funcionalidades:
 - O seu FAQ (Perguntas frequentes)
 - O link do Top.gg
 - Lista de comandos
+- Termos de Uso
+- Política de Privacidade
 
 ## Requisitos
 
@@ -25,6 +27,15 @@ Antes de instalar o site, verifique se você possui os seguintes requisitos:
 
 - Um editor de texto (recomendamos o [Visual Studio Code](https://code.visualstudio.com/))
 - Conhecimento básico em HTML e CSS
+
+## Frameworks
+
+Utilizamos framworks para o desenvolvimento, utilizamos os seguinte frameworks:
+
+- [Bootstrap](https://getbootstrap.com/)
+- [Animate.css](https://animate.style/)
+- [Jquery](https://jquery.com/)
+- [Popperjs](https://popper.js.org/)
 
 ## Instalação
 
@@ -43,7 +54,7 @@ git clone https://github.com/GeovaneDev/NyssaBot-Website
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com este projeto! Se você encontrar bugs ou problemas, por favor, abra uma issue. Se você quiser contribuir com código, crie um pull request.
+Sinta-se à vontade para contribuir com este projeto! Se você encontrar bugs ou problemas, por favor, abra uma issue ou se quiser contribuir com código, crie um pull request.
 
 ## Licença
 

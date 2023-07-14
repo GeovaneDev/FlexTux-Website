@@ -1,85 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: #222;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 40px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 48px;
-      color: #fff;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 24px;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
-
-    .animated-text {
-      font-size: 36px;
-      color: #888;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 0.15em solid #888;
-      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-      margin-bottom: 40px;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-
-    @keyframes blink-caret {
-      from, to {
-        border-color: transparent;
-      }
-      50% {
-        border-color: #888;
-      }
-    }
-  </style>
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta http-equiv="X-Frame-Options" content="deny">
+  <meta http-equiv="Cache-Control" content="max-age=604800">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="no-referrer">
+  <meta name="google-site-verification" content="k2edGGdTzm6SqkYprpS1pVFps_H7ErgWdbmDom4H1iQ" />
+  <title>NyssaBot - 500</title>
+    <meta name="description"
+        content="Adicione a Nyssa bot ao seu servidor do Discord e com comandos de utilidade, moderação, animes gifs e diversão. Conheça a Nyssa Discord Bot">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="container">
-    <h1>Erro 500</h1>
-    <p>Oops! Ocorreu um erro interno no Servidor.</p>
-    <p class="animated-text">Erro interno no Servidor...</p>
-    <p><a href="/" class="btn btn-primary">Voltar para a página inicial</a></p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script>
-    // Adiciona animação fade-in na página
-    document.body.style.opacity = 0;
-    window.onload = function() {
-      setTimeout(function() {
-        document.body.style.opacity = 1;
-      }, 500);
-    };
-  </script>
+<body class="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">NyssaBot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comandos">Comandos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://top.gg/bot/944555548148375592">Top.gg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invite">Adicionar</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="status">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/GeovaneDev/NyssaBot">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container rounded-container bg-dark">
+        <h1 class="animate__animated animate__fadeIn">Erro 500</h1>
+        <h5 class="animate__animated animate__fadeIn animated-text">Erro interno no Servidor...</h5><br>
+        <a href="index" class="btn btn-primary btn-add-bot animate__animated animate__fadeInUp">Voltar para a Home</a>
+    </div><br><br>
+    <footer class="bg-dark">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="comandos">Comandos</a></li>
+                        <li><a href="index#about">Sobre</a></li>
+                        <li><a href="invite">Adicionar bot</a></li>
+                        <li><a href="https://github.com/GeovaneDev/NyssaBot">Github</a></li>
+                        <li><a href="status">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Termos Legais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tos">Termos de Uso</a></li>
+                        <li><a href="pp">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <small>&copy; 2023 <a href="https://github.com/GeovaneDev">GeovaneDev</a>. Todos os direitos
+                reservados.</small>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
 </body>
+
 </html>
