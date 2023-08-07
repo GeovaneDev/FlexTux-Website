@@ -1,18 +1,18 @@
-# NyssaBot - Código Fonte do Site
+# FlexTux - Código Fonte do Site
 
-O código fonte do site da Nyssa Bot, desenvolvido em HTML e CSS.
+O código fonte do site do FlexTux, desenvolvido em HTML e CSS.
 
 ## Sobre
 
-A Nyssa Bot é um bot Discord.js v14 que utiliza Slash Commands(/). Ela foi desenvolvida para proporcionar uma experiência mais fácil e rápida para o seu servidor Discord. Agora, com o site da Nyssa Bot, os usuários podem acessar informações sobre o bot.
+O FlexTux é um bot Discord.js v14 que utiliza Slash Commands(/). Foi desenvolvido para proporcionar uma experiência mais fácil e rápida para o seu servidor Discord.
 
 ## Site
 
-Acesse o site da Nyssa Bot em [https://nyssabot.pages.dev/](https://nyssabot.pages.dev/).
+Acesse o site do FlexTux em [https://flextux.pages.dev/](https://flextux.pages.dev/).
 
 ## Funcionalidades
 
-O site da Nyssa Bot possui as seguintes funcionalidades:
+O site do FlexTux possui as seguintes funcionalidades:
 
 - Informações sobre o bot
 - O seu FAQ (Perguntas frequentes)
@@ -43,14 +43,14 @@ Para instalar o site, siga os seguintes passos:
 
 1. Clone este repositório:
 ```
-git clone https://github.com/GeovaneDev/NyssaBot-Website
+git clone https://github.com/GeovaneDev/FlexTux-Website
 ```
 
 2. Abra o projeto em seu editor de texto.
 
 3. Edite os arquivos HTML e CSS para personalizar o site de acordo com suas necessidades.
 
-4. Faça o deploy do site para um servidor de hospedagem, como o [GitHub Pages](https://pages.github.com/) ou o [Netlify](https://www.netlify.com/).
+4. Faça o deploy do site para um servidor de hospedagem, como o [Netlify](https://www.netlify.com/).
 
 ## Contribuição
 
